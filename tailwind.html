@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen flex flex-col">
+    <header
+      class="h-20 bg-blue-500 flex items-center justify-center text-white"
+    >
+      Header
+    </header>
+    <div class="flex flex-1 flex-col md:flex-row">
+      <aside
+        class="w-full md:w-64 h-16 md:h-auto bg-orange-400 flex items-center justify-center"
+      >
+        Sidebar
+      </aside>
+      <main class="flex-1 bg-green-500 flex flex-col items-center p-4">
+        Content
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-4">
+          <div class="bg-white p-4 shadow text-center">Card 1</div>
+          <div class="bg-white p-4 shadow text-center">Card 2</div>
+          <div class="bg-white p-4 shadow text-center">Card 3</div>
+          <div class="bg-white p-4 shadow text-center">Card 4</div>
+        </div>
+      </main>
+    </div>
+    <footer
+      class="h-16 bg-gray-800 flex items-center justify-center text-white"
+    >
+      Footer
+    </footer>
+  </body>
+</html>
